@@ -1,0 +1,16 @@
+.navbar{
+    background:#1F0863;
+}
+footer{
+    background: #1F0863;
+}
+
+.dropdown-item{
+    color: #1F0863;
+}
+.transfer{
+    background: #1F0863;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}

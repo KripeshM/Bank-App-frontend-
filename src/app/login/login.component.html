@@ -1,0 +1,58 @@
+<nav class="navbar ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">
+        <img src="https://pngimg.com/uploads/bank/bank_PNG29.png" alt="Logo" width="30px" height="24px" class="d-inline-block align-text-top ms-3 fs-2">
+        <span class="text-light ms-2 fs-3 mt-4 fw-bold">ABC BANK</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container mb-5">
+    <div class="login row mt-5 ">
+        <div class="col-6 bg-light p-0 ">
+            <img src="https://designjiaoshi.com/wp-content/uploads/2019/10/Isometric-Ecommerce-and-Online-Shopping-%E2%80%94-Illustrations-on-UI8-6-1024x774.jpg" alt="" width="100%" height="500px">
+        </div>
+        <div class="col-6 bg-light ">
+          <form [formGroup]="loginForm" (ngSubmit)="login()"  action="" class="d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center mt-4 fw-bold">Login</h2>
+            <div class="form-floating mb-5 mt-5 w-75">
+              <input name="acno" formControlName="acno" type="number" class="form-control " id="floatingInput" placeholder="Enter account number">
+              <div class="text-danger" *ngIf="this.loginForm.get('acno')?.errors && this.loginForm.get('acno')?.touched">Invalid Account Number</div>
+
+              <label for="floatingInput">Enter account number</label>
+            </div>
+            <div class="form-floating  mb-4 w-75">
+              <input name="password" formControlName="password" type="password" class="form-control " id="floatingPassword" placeholder="Password">
+              <div class="text-danger" *ngIf="this.loginForm.get('password')?.errors && this.loginForm.get('password')?.touched">Invalid Password</div>
+
+              <label for="floatingPassword">Password</label>
+            </div>
+
+            <!-- login error message -->
+            <div class="text-danger mt-2 mb-2 fw-bolder">
+              {{loginErrorMsg}}
+            </div>
+
+            <div class="mb-4">
+              <button type="submit" class="btn btn-success fw-bold p-2">Sign In
+                <div *ngIf="loginSpinner" class="spinner-border" role="status" id="spinner">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </button>
+            </div>
+            <div class="mb-3 ">
+             <span style="color: #092D32;" class=" fs-5">New to Here?</span>&nbsp;<a id="reg-link"  class="me-3 fs-5" routerLink="register">Sign Up</a>
+            </div>
+          </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-light" href="">ABC Bank.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>

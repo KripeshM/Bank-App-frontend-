@@ -1,0 +1,41 @@
+.navbar{
+    background:#1F0863;
+}
+.btn{
+    background:#1F0863;
+}
+.btn:hover{
+    background: #fff;
+    color: #1F0863;
+    font-weight: bold;
+    border: 2px solid #1F0863;
+}
+.login{
+    box-shadow: 10px 10px 8px 10px #100442;
+}
+#reg-link{
+    text-decoration: none;
+     color: #1F0863;
+    
+}
+#reg-link:hover{
+    color: #fff;
+    background:#1F0863;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+footer{
+    background: #1F0863;
+}
+h2{
+    color:#1F0863 ;
+}
+#spinner{
+    color: #1A0759;
+}

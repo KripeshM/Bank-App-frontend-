@@ -1,0 +1,68 @@
+
+                Bank Application Frontend               
+        
+
+    1 Project Creation - ng new bankapp-Frontend
+    2 Run angular project - ng s -o
+    3 Clean the code by removing all code from app.component.html
+    4 Includes 3rd party libraries - bootstrap, fontawesome, google fonts
+    5 Creating components
+        1 Login - ng g c login
+        2 Registration - ng g c Registration
+        3 Dashboard - ng g c Dashboard
+        4 Transactions - ng g c transactions 
+        5 page not found - ng g c PageNotFound
+    6 Setup path for each components in app.routing.module.ts
+
+        {
+            path:'',component:LoginComponent
+        },
+        {
+            path:'register',component:RegistrationComponent
+        }
+
+    7 Use router outlet in app.component.html
+    8 Design Each component
+    9 Validations - Reactive forms module - app.module.ts
+        Angular forms 
+            -Model Driven forms
+               eg:ReactiveFormsModule - To apply user input validations
+            
+                1 Form Group 
+                2 Form Array
+                3 Form Control
+            Add dependency injection to ts file - FormBuilder
+
+    10 Create backend
+    11 Integration
+
+        1 import HttpClientModule in app.module.ts
+        2 create services/api - ng g s services/api - create api call for register 
+        3 api communicate with register component
+        
+      1 Register Integration
+      2 login Integration
+      3 Dashboard Design
+
+    12 Token verification
+        token verification occurs when the client request after successfull login 
+
+        getBalance rerquest - 1)Header - token
+                              2)Body - (url - acno)
+                    
+    13 Middleware 
+        control request-response cycle
+
+        func(req,res,next){
+
+        }
+
+        types
+            1)Application specific middleware - Execute automatically...(Backend - index.js)
+
+            2)Router specific middleware - Execute for a specific route (Here we use Router specific)
+
+
+
+
+    
